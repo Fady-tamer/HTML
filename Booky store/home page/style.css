@@ -6,8 +6,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     display: flex;
+    position: sticky;
+    top: 0;
+    background-color: rgb(51, 94, 106);
     align-items: center;
     padding-left: 20px;
     padding-right: 40px;
@@ -25,6 +32,46 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px
+}
+
+.header_cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header_cart img {
+    margin: 0 0 0 150px;
+    width: 30px;
+    height: 30px;
+}
+
+.cart_items_count {
+    margin: 0;
+}
+
+.header_user_profile {
+    display: flex;
+    margin: 0 20px 0 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header_user_profile img {
+    width: 30px;
+    height: 30px;
+}
+
+.header_login_signup button {
+    background-color: rgb(203, 27, 27);
+    color: rgb(255, 255, 255);
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
 }
 
 .Categories_page {
@@ -122,6 +169,9 @@ body {
 }
 
 .body_content {
+    display: block;
+    width: 100%;
+    height: fit-content;
     justify-content: space-between;
 }
 
@@ -305,24 +355,28 @@ body {
 
 .featured_books .book:hover {
     padding: 10px 250px 10px 10px;
-    transition: all 0.5s ease-in-out;
+    margin: 0;
+    transition: all 0.5s ease;
 }
 
 .book {
     display: flex;
-    width: 160px;
-    height: 310px;
+    width: 150px;
+    height: fit-content;
     border-radius: 20px;
     color: white;
     margin: 10px;
     padding: 10px;
     box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
     background-color: rgba(37, 34, 34, 0.186);
+    transition: all 0.3s ease;
     overflow: hidden;
 }
 
 .data {
     display: block;
+    height: fit-content;
+    width: 150px;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -331,15 +385,22 @@ body {
 .book_discription {
     width: 150px;
     height: 200px;
-    margin: 20px;
-    padding: 30px;
+    padding: 0 0 0 20px;
+}
+
+.book_discription h3 {
+    width: 210px;
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(51, 94, 106);
 }
 
 .book_discription h4 {
     padding: 0;
     margin: 0;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 14px;
     color: black;
 }
 
@@ -352,7 +413,7 @@ body {
 }
 
 .featured_books p {
-    width: 150px;
+    width: 210px;
     font-size: 15px;
     padding: 0;
     margin: 0 0 2px 0;
