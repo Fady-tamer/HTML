@@ -27,23 +27,6 @@ body {
     gap: 20px
 }
 
-.home_page {
-    width: 60px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    padding: 5px 10px;
-    background-color: rgba(32, 10, 8, 0.211);
-}
-
-.home_page:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(32, 15, 15);
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
 .Categories_page {
     width: 90px;
     text-decoration: none;
@@ -147,21 +130,21 @@ body {
     margin: 0px 20px;
     padding: 20px;
     border-radius: 20px;
-    min-height: 65.8vh;
+    min-height: calc(100vh - 100px);
     margin: 0px 20px 20px 20px;
     flex-direction: column;
 }
 
-.Browse_category{
+.Browse_category {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(37, 34, 34, 0.186);
     border-radius: 20px;
-    margin:0px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
-.Categories{
+.Categories {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +152,12 @@ body {
     margin: 0px 0px 10px 0px;
 }
 
-.fiction{
+.Categories a:hover {
+    transform: scale(1.2);
+}
+
+.fiction {
+    text-decoration: none;
     width: 100px;
     height: 100px;
     font-size: 18px;
@@ -184,13 +172,14 @@ body {
 
 }
 
-.fiction img{
+.fiction img {
     padding-top: 10px;
     width: 50px;
     height: 50px;
 }
 
-.non-fiction{
+.non-fiction {
+    text-decoration: none;
     width: 100px;
     height: 100px;
     font-size: 14px;
@@ -205,13 +194,14 @@ body {
 
 }
 
-.non-fiction img{
+.non-fiction img {
     padding-top: 10px;
     width: 50px;
     height: 50px;
 }
 
-.sci-fi{
+.sci-fi {
+    text-decoration: none;
     width: 100px;
     height: 100px;
     font-size: 18px;
@@ -226,13 +216,14 @@ body {
 
 }
 
-.sci-fi img{
+.sci-fi img {
     padding-top: 10px;
     width: 50px;
     height: 50px;
 }
 
-.romance{
+.romance {
+    text-decoration: none;
     width: 100px;
     height: 100px;
     font-size: 18px;
@@ -247,13 +238,14 @@ body {
 
 }
 
-.romance img{
+.romance img {
     padding-top: 10px;
     width: 50px;
     height: 50px;
 }
 
-.mystery{
+.mystery {
+    text-decoration: none;
     width: 100px;
     height: 100px;
     font-size: 18px;
@@ -268,71 +260,113 @@ body {
 
 }
 
-.mystery img{
+.mystery img {
     padding-top: 10px;
     width: 50px;
     height: 50px;
 }
 
-.contact_us_body {
-    background-color: white;
-    margin: 0px 20px;
-    padding: 20px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+.view_all {
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    padding: 10px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgb(35, 238, 76);
 }
 
-.data_contact_us_title h1 {
-    font-size: 16px;
-    padding-top: 0;
-    padding-bottom: 5px;
+.view_all img {
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.featured_Books {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(37, 34, 34, 0.186);
+    border-radius: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+.featured_books {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0px 0px 0px;
+}
+
+.featured_books .book:hover {
+    padding: 10px 250px 10px 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.book {
+    display: flex;
+    width: 160px;
+    height: 310px;
+    border-radius: 20px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(37, 34, 34, 0.186);
+    overflow: hidden;
+}
+
+.data {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.book_discription {
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.book_discription h4 {
+    padding: 0;
     margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
 }
 
-.link_contact_us_facebook {
+.featured_books img {
     display: flex;
-    align-items: center;
-    padding-bottom: 5px;
-    gap: 5px;
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-.link_contact_us_facebook img {
-    width: 25px;
+.featured_books p {
+    width: 150px;
+    font-size: 15px;
+    padding: 0;
+    margin: 0 0 2px 0;
+    color: black;
 }
 
-.link_contact_us_facebook a {
-    text-decoration: none;
-    color: blue;
-}
-
-.link_contact_us_instagram {
-    display: flex;
-    align-items: center;
-    padding-bottom: 5px;
-    gap: 5px;
-}
-
-.link_contact_us_instagram img {
-    width: 25px;
-}
-
-.link_contact_us_instagram a {
-    text-decoration: none;
-    color: blue;
-}
-
-.link_contact_us_github {
-    display: flex;
-    align-items: center;
-    padding-bottom: 5px;
-    gap: 5px;
-}
-
-.link_contact_us_github img {
-    width: 25px;
-}
-
-.link_contact_us_github a {
-    text-decoration: none;
-    color: blue;
+.featured_books button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
 }
