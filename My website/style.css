@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #132541;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: sticky;
+    top: 20px;
+    margin: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #132541;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.title h3 {
+    font-size: 25px;
+    color: white;
+    margin: 30px 0 0 30px;
+    padding: 0;
+}
+
+.navigate {
+    width: fit-content;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.navigate a:hover {
+    color: white;
+    background-color: #132541;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.contact {
+    display: flex;
+    width: fit-content;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.contact a:hover {
+    color: white;
+    background-color: #132541;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.8s;
+}
+
+.about{
+    margin: 20px;
+    padding: 0;
+}
+
+.data{
+    margin: 20px 0 0 40px;
+}
+
+.data p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.project {
+    margin: 20px;
+    padding: 0;
+}
+
+.project_card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    width: 45.5%;
+    height: 300px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.card_name{
+    width: fit-content;
+    height: fit-content;
+}
+
+.card_name h3{
+    margin: 0;
+    padding: 0;
+}
+
+.card_ing{
+    margin: 20px 0 0 0;
+}
+
+.card_ing img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+.card_used_lang{
+    font-weight: bold;
+}
+
+.card_description h3{
+    margin: 5px;
+    padding: 0;
+}
+
+.card_description p{
+    margin: 5px;
+    padding: 0;
+    width: 500px;
+}
+
+.card_link{
+    position: relative;
+    width: fit-content;
+    bottom: -25px;
+    left: 820px;
+}
+
+.card_link i{
+    color: black;
+}
