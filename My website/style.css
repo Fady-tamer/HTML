@@ -28,13 +28,6 @@ body {
     transition: all 0.3s;
 }
 
-.title h3 {
-    font-size: 25px;
-    color: white;
-    margin: 30px 0 0 30px;
-    padding: 0;
-}
-
 .navigate {
     width: fit-content;
     background-color: white;
@@ -68,25 +61,42 @@ body {
     transition: all 0.8s;
 }
 
-.about{
+.about {
     margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+.about_title h3 {
+    font-size: 25px;
+    color: #132541;
+    margin: 0;
     padding: 0;
 }
 
-.data{
+.data {
     margin: 20px 0 0 40px;
 }
 
-.data p{
+.data p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    padding: 5px;
+    padding: 5px 0 5px 0;
     font-size: 30px;
-    color: white;
+    color: #132541;
 }
 
 .project {
     margin: 20px;
+    padding: 0;
+}
+
+.project_title h3 {
+    font-size: 25px;
+    color: white;
+    margin: 30px 0 0 30px;
     padding: 0;
 }
 
@@ -109,47 +119,44 @@ body {
     background-color: white;
 }
 
-.card_name{
+.card_name {
     width: fit-content;
     height: fit-content;
 }
 
-.card_name h3{
+.card_name h3 {
     margin: 0;
     padding: 0;
 }
 
-.card_ing{
+.card_ing {
     margin: 20px 0 0 0;
 }
 
-.card_ing img{
+.card_ing img {
     width: 250px;
     border-radius: 20px;
 }
 
-.card_used_lang{
+.card_used_lang {
     font-weight: bold;
 }
 
-.card_description h3{
+.card_description h3 {
     margin: 5px;
     padding: 0;
 }
 
-.card_description p{
+.card_description p {
     margin: 5px;
     padding: 0;
     width: 500px;
 }
 
-.card_link{
-    position: relative;
-    width: fit-content;
-    bottom: -25px;
-    left: 820px;
+.card_link {
+    margin-top: 30px;
 }
 
-.card_link i{
+.card_link i {
     color: black;
 }
